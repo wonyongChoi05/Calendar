@@ -1,7 +1,7 @@
 package com.nyong.calendar.api.service;
 
-import com.nyong.calendar.core.domain.entity.Engagement;
+import com.nyong.calendar.api.dto.EngagementEmailStuff;
 
 public interface EmailService {
-    void sendEngagement(Engagement engagement);
+    void sendEngagement(EngagementEmailStuff stuff);
 }

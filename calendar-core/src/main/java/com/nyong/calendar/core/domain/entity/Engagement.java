@@ -1,6 +1,7 @@
 package com.nyong.calendar.core.domain.entity;
 
 import com.nyong.calendar.core.domain.Event;
+import com.nyong.calendar.core.domain.RequestReplyType;
 import com.nyong.calendar.core.domain.RequestStatus;
 import com.nyong.calendar.core.util.Period;
 import lombok.*;
@@ -33,5 +34,19 @@ public class Engagement extends BaseEntity {
 
     public boolean isOverlapped(Period period) {
         return this.schedule.isOverlapped(period);
+    }
+
+    public Engagement reply(RequestReplyType type) {
+        switch (type) {
+            case ACCEPT:
+                this.requestStatus = RequestStatus.ACCEPTED;
+                break;
+
+            case REJECT:
+                this.requestStatus = RequestStatus.REQUESTED;
+                break;
+        }
+
+        return this;
     }
 }
