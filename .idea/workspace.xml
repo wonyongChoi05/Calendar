@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6dc34b1e-8f93-4d34-8c52-67a9264a0b36" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ber-Backend" beforeDir="false" afterPath="$PROJECT_DIR$/../Ber-Backend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ber-Backend 복사본" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../English-word-test" beforeDir="false" afterPath="$PROJECT_DIR$/../English-word-test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fsk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/start/security/SecurityApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/start/security/domain/member/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/start/security/domain/member/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/start/security/domain/member/controller/MemberController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/start/security/domain/member/dto/MemberSignUpRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/start/security/domain/member/dto/MemberUpdateRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/start/security/domain/member/dto/MemberUpdateResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/start/security/domain/member/service/MemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/start/security/domain/member/service/impl/MemberServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/start/security/global/config/CustomUserDetailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/start/security/global/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/start/security/global/config/SecurityUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/start/security/global/jwt/JwtAuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/start/security/global/jwt/JwtTokenProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/test/java/start/security/SecurityApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2C7GgqbjYWqtQJ6lyfE5LOp3XEA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "spring.configuration.checksum": "018af98dfe6c82859e9d28da4f324493"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6dc34b1e-8f93-4d34-8c52-67a9264a0b36" name="Changes" comment="" />
+      <created>1658146331670</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658146331670</updated>
+      <workItem from="1658146340210" duration="305000" />
+      <workItem from="1658146657338" duration="127000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
