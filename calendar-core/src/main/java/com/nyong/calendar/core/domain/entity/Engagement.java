@@ -1,6 +1,5 @@
 package com.nyong.calendar.core.domain.entity;
 
-import com.nyong.calendar.core.domain.Event;
 import com.nyong.calendar.core.domain.RequestStatus;
 import lombok.*;
 
@@ -12,12 +11,7 @@ import java.time.LocalDateTime;
 @Builder
 @Getter
 @Entity
-public class Engagement {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "notification_id")
-    private Long id;
+public class Engagement extends BaseEntity {
 
     @ManyToOne
     @JoinColumn(name = "schedule_id")
@@ -27,14 +21,6 @@ public class Engagement {
     @JoinColumn(name = "attendee_id")
     private User attendee;
 
-    private LocalDateTime createdAt;
-
     private RequestStatus requestStatus;
 
-    public Engagement(Long id, User attendee, LocalDateTime createdAt, RequestStatus requestStatus) {
-        this.id = id;
-        this.attendee = attendee;
-        this.createdAt = createdAt;
-        this.requestStatus = requestStatus;
-    }
 }

@@ -11,11 +11,7 @@ import java.time.LocalDateTime;
 @Table(name = "users")
 @Getter
 @Entity
-public class User {
-
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
-    private Long id;
+public class User extends BaseEntity {
 
     private String name;
 
@@ -24,7 +20,5 @@ public class User {
     private String password;
 
     private LocalDateTime birthday;
-
-    private LocalDateTime createAt = LocalDateTime.now();
 
 }

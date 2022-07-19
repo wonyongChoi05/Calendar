@@ -8,19 +8,13 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Builder
 @Getter
 @Entity
-public class Schedule {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "schedule_id")
-    private Long id;
+public class Schedule extends BaseEntity{
 
     private String title;
 
@@ -36,8 +30,6 @@ public class Schedule {
 
     @Enumerated(EnumType.STRING)
     private ScheduleType scheduleType;
-
-    private LocalDateTime createdAt = LocalDateTime.now();
 
     private static Schedule event(String title, String description, LocalDateTime startAt, LocalDateTime endAt, User writer) {
         return Schedule.builder()
