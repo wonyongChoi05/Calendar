@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dc34b1e-8f93-4d34-8c52-67a9264a0b36" name="Changes" comment="" />
+    <list default="true" id="6dc34b1e-8f93-4d34-8c52-67a9264a0b36" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar-core/src/main/java/com/nyong/calendar/core/domain/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-core/src/main/java/com/nyong/calendar/core/domain/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar-core/src/main/java/com/nyong/calendar/core/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-core/src/main/java/com/nyong/calendar/core/service/UserService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +25,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -63,6 +69,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
     "jdk.selected.JAVA_MODULE": "11",
     "last_opened_file_path": "/Users/nyong/Desktop/index/project/Calendar/build.gradle",
     "node.js.detected.package.eslint": "true",
@@ -123,7 +132,7 @@
       <workItem from="1658146657338" duration="4654000" />
       <workItem from="1658155538695" duration="5367000" />
       <workItem from="1658248065743" duration="4152000" />
-      <workItem from="1658310657902" duration="2515000" />
+      <workItem from="1658310657902" duration="4236000" />
     </task>
     <servers />
   </component>

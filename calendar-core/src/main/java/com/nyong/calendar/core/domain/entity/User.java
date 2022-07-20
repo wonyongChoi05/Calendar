@@ -1,5 +1,6 @@
 package com.nyong.calendar.core.domain.entity;
 
+import com.nyong.calendar.core.util.Encryptor;
 import lombok.*;
 
 import javax.persistence.*;
@@ -21,4 +22,7 @@ public class User extends BaseEntity {
 
     private LocalDateTime birthday;
 
+    public boolean isMatch(Encryptor encryptor, String password) {
+        return encryptor.isMatch(password, this.password);
+    }
 }
