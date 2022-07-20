@@ -4,6 +4,7 @@ import com.nyong.calendar.core.util.Encryptor;
 import lombok.*;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @AllArgsConstructor
@@ -20,7 +21,7 @@ public class User extends BaseEntity {
 
     private String password;
 
-    private LocalDateTime birthday;
+    private LocalDate birthday;
 
     public boolean isMatch(Encryptor encryptor, String password) {
         return encryptor.isMatch(password, this.password);

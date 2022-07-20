@@ -18,12 +18,12 @@ public class UserService {
     private final Encryptor encryptor;
 
     @Transactional
-    public User create(UserCreateReq userCreateReq) {
-        userRepository.findByEmail(userCreateReq.getEmail())
+    public User create(UserCreateReq req) {
+        userRepository.findByEmail(req.getEmail())
                 .ifPresent(u -> {
-                    throw new RuntimeException("user already existed");
+                    throw new RuntimeException("cannot find user");
                 });
-        return userRepository.save(userCreateReq.toEntity());
+        return userRepository.save(req.toEntity(encryptor));
     }
 
     public Optional<User> findPwMatchUser(String email, String password) {

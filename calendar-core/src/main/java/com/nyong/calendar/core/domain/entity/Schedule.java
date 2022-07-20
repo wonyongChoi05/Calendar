@@ -48,7 +48,7 @@ public class Schedule extends BaseEntity{
                 .description(description)
                 .startAt(taskAt)
                 .writer(writer)
-                .scheduleType(ScheduleType.EVENT)
+                .scheduleType(ScheduleType.TASK)
                 .build();
     }
 
@@ -57,7 +57,7 @@ public class Schedule extends BaseEntity{
                 .title(title)
                 .startAt(notifyAt)
                 .writer(writer)
-                .scheduleType(ScheduleType.EVENT)
+                .scheduleType(ScheduleType.NOTIFICATION)
                 .build();
     }
 

@@ -5,6 +5,7 @@ import com.nyong.calendar.api.dto.SignUpReq;
 import com.nyong.calendar.core.domain.entity.User;
 import com.nyong.calendar.core.dto.UserCreateReq;
 import com.nyong.calendar.core.service.UserService;
+import com.nyong.calendar.core.util.Encryptor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,7 +18,8 @@ import java.util.Optional;
 @Transactional
 public class LoginService {
 
-    private final static String LOGIN_SESSION_KEY = "USER_ID";
+    public final static String LOGIN_SESSION_KEY = "USER_ID";
+    private Encryptor encryptor;
     private final UserService userService;
 
     public void signUp(SignUpReq signUpReq, HttpSession session) {
