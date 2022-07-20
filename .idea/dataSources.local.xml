@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-221.5591.52">
-    <data-source name="local_calendar_db" uuid="9ad9459a-7225-4563-ba9e-264d535a7411">
+  <component name="dataSourceStorageLocal" created-in="IU-221.5921.22">
+    <data-source name="calendar@localhost" uuid="335061a4-e638-4d6c-b2de-6560f5abbf10">
       <database-info product="MySQL" version="8.0.29" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)" dbms="MYSQL" exact-version="8.0.29" exact-driver-version="8.0">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>

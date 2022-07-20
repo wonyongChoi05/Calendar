@@ -16,7 +16,7 @@ spring:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     generate-ddl: true
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
     show_sql: true
     open-in-view: false
     properties:
