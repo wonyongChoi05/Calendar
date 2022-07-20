@@ -21,12 +21,7 @@ public class UserService {
                 .ifPresent(u -> {
                     throw new RuntimeException("user already existed");
                 });
-        return userRepository.save(new User(
-                userCreateReq.getName(),
-                userCreateReq.getEmail(),
-                userCreateReq.getPassword(),
-                userCreateReq.getBirthday()
-        ));
+        return userRepository.save(userCreateReq.toEntity());
     }
 
     public Optional<User> findPwMatchUser(String email, String password) {
