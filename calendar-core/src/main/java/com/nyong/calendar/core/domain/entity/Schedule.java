@@ -4,9 +4,11 @@ import com.nyong.calendar.core.domain.Event;
 import com.nyong.calendar.core.domain.Notification;
 import com.nyong.calendar.core.domain.ScheduleType;
 import com.nyong.calendar.core.domain.Task;
+import com.nyong.calendar.core.util.Period;
 import lombok.*;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @AllArgsConstructor
@@ -74,5 +76,9 @@ public class Schedule extends BaseEntity{
 
     public Notification toNotification() {
         return new Notification(this);
+    }
+
+    public boolean isOverlapped(LocalDate date) {
+        return Period.of(this.getStartAt(), this.getEndAt()).isOverlapped(date);
     }
 }

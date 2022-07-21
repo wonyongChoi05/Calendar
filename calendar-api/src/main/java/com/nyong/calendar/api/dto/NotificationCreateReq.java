@@ -25,6 +25,7 @@ public class NotificationCreateReq {
         if (repeatInfo == null) {
             return Collections.singletonList(notifyAt);
         }
+        
         return IntStream.range(0, repeatInfo.times)
                 .mapToObj(i -> {
                             long increment = (long) repeatInfo.interval.intervalValue * i;

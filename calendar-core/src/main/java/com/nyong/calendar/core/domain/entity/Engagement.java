@@ -5,6 +5,7 @@ import com.nyong.calendar.core.domain.RequestStatus;
 import lombok.*;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @AllArgsConstructor
@@ -27,5 +28,9 @@ public class Engagement extends BaseEntity {
 
     public Event getEvent() {
         return schedule.toEvent();
+    }
+
+    public boolean isOverlapped(LocalDate date) {
+        return this.schedule.isOverlapped(date);
     }
 }
