@@ -1015,7 +1015,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>3</Position>
     </column>
     <column id="291" parent="284" name="request_status">
-      <DataType>int|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <Position>4</Position>
     </column>
     <column id="292" parent="284" name="attendee_id">
@@ -1146,7 +1146,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>3</Position>
     </column>
     <column id="320" parent="287" name="birthday">
-      <DataType>datetime(6)|0s</DataType>
+      <DataType>date|0s</DataType>
       <Position>4</Position>
     </column>
     <column id="321" parent="287" name="email">

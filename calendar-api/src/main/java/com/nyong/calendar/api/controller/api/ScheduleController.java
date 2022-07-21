@@ -1,9 +1,11 @@
-package com.nyong.calendar.api.controller;
+package com.nyong.calendar.api.controller.api;
 
 import com.nyong.calendar.api.dto.AuthUser;
 import com.nyong.calendar.api.dto.EventCreateReq;
+import com.nyong.calendar.api.dto.NotificationCreateReq;
 import com.nyong.calendar.api.dto.TaskCreateReq;
 import com.nyong.calendar.api.service.EventService;
+import com.nyong.calendar.api.service.NotificationService;
 import com.nyong.calendar.api.service.TaskService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -19,6 +21,7 @@ public class ScheduleController {
 
     private final TaskService taskService;
     private final EventService eventService;
+    private final NotificationService notificationService;
 
     @PostMapping("/tasks")
     public ResponseEntity<Void> createTask(@RequestBody TaskCreateReq taskCreateReq,
@@ -31,6 +34,13 @@ public class ScheduleController {
     public ResponseEntity<Void> createEvent(@RequestBody EventCreateReq eventCreateReq,
                                            AuthUser authUser) {
         eventService.create(eventCreateReq, authUser);
+        return ResponseEntity.ok().build();
+    }
+
+    @PostMapping("/notifications")
+    public ResponseEntity<Void> createTask(
+            @RequestBody NotificationCreateReq notificationCreateReq, AuthUser authUser) {
+        notificationService.create(notificationCreateReq, authUser);
         return ResponseEntity.ok().build();
     }
 }

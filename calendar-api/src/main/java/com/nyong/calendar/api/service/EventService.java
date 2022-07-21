@@ -63,7 +63,5 @@ public class EventService {
                     engagementRepository.save(engagement);
                     emailService.sendEngagement(engagement);
                 });
-
-
     }
 }
