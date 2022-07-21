@@ -1,5 +1,6 @@
 package com.nyong.calendar.core.domain.entity;
 
+import com.nyong.calendar.core.domain.Event;
 import com.nyong.calendar.core.domain.RequestStatus;
 import lombok.*;
 
@@ -21,6 +22,10 @@ public class Engagement extends BaseEntity {
     @JoinColumn(name = "attendee_id")
     private User attendee;
 
+    @Enumerated(EnumType.STRING)
     private RequestStatus requestStatus;
 
+    public Event getEvent() {
+        return schedule.toEvent();
+    }
 }
