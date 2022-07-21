@@ -49,8 +49,8 @@ public class ScheduleController {
     @GetMapping("/day")
     public List<ScheduleDto> getSchedulesByDay(
             AuthUser authUser,
-            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date
-    ) {
+            @RequestParam(required = false)
+            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
         return scheduleQueryService.getSchedulesByDay(date == null ? LocalDate.now() : date, authUser);
     }
 }

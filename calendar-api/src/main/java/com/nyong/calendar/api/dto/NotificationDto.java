@@ -14,6 +14,7 @@ public class NotificationDto implements ScheduleDto{
     private final LocalDateTime notifyAt;
     private final String title;
     private final Long writerId;
+    private final ScheduleType scheduleType;
 
     @Override
     public ScheduleType scheduleType() {

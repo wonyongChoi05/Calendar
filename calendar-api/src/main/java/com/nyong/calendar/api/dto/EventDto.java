@@ -16,6 +16,7 @@ public class EventDto implements ScheduleDto{
     private final String title;
     private final String description;
     private final Long writerId;
+    private final ScheduleType scheduleType;
 
     @Override
     public ScheduleType scheduleType() {

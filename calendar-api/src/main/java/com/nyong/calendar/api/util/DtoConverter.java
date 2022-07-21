@@ -18,6 +18,7 @@ public abstract class DtoConverter {
                         .title(schedule.getTitle())
                         .description(schedule.getDescription())
                         .writerId(schedule.getWriter().getId())
+                        .scheduleType(schedule.getScheduleType())
                         .build();
             case TASK:
                 return TaskDto.builder()
@@ -26,6 +27,7 @@ public abstract class DtoConverter {
                         .title(schedule.getTitle())
                         .description(schedule.getDescription())
                         .writerId(schedule.getWriter().getId())
+                        .scheduleType(schedule.getScheduleType())
                         .build();
             case NOTIFICATION:
                 return NotificationDto.builder()
@@ -33,6 +35,7 @@ public abstract class DtoConverter {
                         .notifyAt(schedule.getStartAt())
                         .title(schedule.getTitle())
                         .writerId(schedule.getWriter().getId())
+                        .scheduleType(schedule.getScheduleType())
                         .build();
             default:
                 throw new RuntimeException("bad request. not matched schedule type.");
