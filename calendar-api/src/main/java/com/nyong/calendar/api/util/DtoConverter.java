@@ -5,6 +5,8 @@ import com.nyong.calendar.api.dto.NotificationDto;
 import com.nyong.calendar.api.dto.ScheduleDto;
 import com.nyong.calendar.api.dto.TaskDto;
 import com.nyong.calendar.core.domain.entity.Schedule;
+import com.nyong.calendar.core.exception.CalendarException;
+import com.nyong.calendar.core.exception.ErrorCode;
 
 public abstract class DtoConverter {
 
@@ -38,7 +40,7 @@ public abstract class DtoConverter {
                         .scheduleType(schedule.getScheduleType())
                         .build();
             default:
-                throw new RuntimeException("bad request. not matched schedule type.");
+                throw new CalendarException(ErrorCode.BAD_REQUEST);
         }
     }
 }

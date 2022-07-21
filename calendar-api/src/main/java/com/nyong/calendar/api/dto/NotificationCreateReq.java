@@ -1,5 +1,7 @@
 package com.nyong.calendar.api.dto;
 
+import com.nyong.calendar.core.exception.CalendarException;
+import com.nyong.calendar.core.exception.ErrorCode;
 import com.nyong.calendar.core.util.TimeUnit;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -25,7 +27,7 @@ public class NotificationCreateReq {
         if (repeatInfo == null) {
             return Collections.singletonList(notifyAt);
         }
-        
+
         return IntStream.range(0, repeatInfo.times)
                 .mapToObj(i -> {
                             long increment = (long) repeatInfo.interval.intervalValue * i;
@@ -39,7 +41,7 @@ public class NotificationCreateReq {
                                 case YEAR:
                                     return notifyAt.plusYears(increment);
                                 default:
-                                    throw new RuntimeException("bad request. not matched time unit");
+                                    throw new CalendarException(ErrorCode.BAD_REQUEST);
                             }
                         }
                 )

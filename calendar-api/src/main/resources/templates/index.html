@@ -49,7 +49,7 @@
             </div>
             <hr class="my-4">
             <div class="d-flex justify-content-end">
-              <p>회원이 아니라면? &nbsp;</p><a href="javascript:void(0);" onclick="viewSignUp()">가입하기</a>
+              <p>회원이 아니시라구요?&nbsp;</p><a href="javascript:void(0);" onclick="viewSignUp()">가입하기</a>
             </div>
           </form>
         </div>
@@ -130,6 +130,7 @@
       location.reload();
     }).catch((e) => {
       alert(JSON.stringify(e.response))
+      alert(e.response.data.errorMessage)
     })
   })
 
@@ -144,6 +145,7 @@
     }).catch((e) => {
       console.log(e)
       alert(JSON.stringify(e.response))
+      alert(e.response.data.errorMessage)
     })
   })
 
@@ -154,6 +156,7 @@
               location.reload()
             })
   }
+  //]]>
 </script>
 
 </body>

@@ -8,6 +8,8 @@ import com.nyong.calendar.core.domain.entity.Schedule;
 import com.nyong.calendar.core.domain.entity.User;
 import com.nyong.calendar.core.domain.entity.repository.EngagementRepository;
 import com.nyong.calendar.core.domain.entity.repository.ScheduleRepository;
+import com.nyong.calendar.core.exception.CalendarException;
+import com.nyong.calendar.core.exception.ErrorCode;
 import com.nyong.calendar.core.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -38,7 +40,7 @@ public class EventService {
                 .anyMatch(e -> eventCreateReq.getAttendeeIds().contains(e.getAttendee().getId())
                         && e.getRequestStatus() == RequestStatus.ACCEPTED
                         && e.getEvent().isOverlapped(eventCreateReq.getStartAt(), eventCreateReq.getEndAt()))) {
-            throw new RuntimeException("이미 초대한 상대이거나, 중복된 시간대에 일정을 등록할 수 없습니다.");
+            throw new CalendarException(ErrorCode.EVENT_CREATE_OVERLAPPED_PERIOD);
         }
 
         Schedule eventSchedule = Schedule.event(

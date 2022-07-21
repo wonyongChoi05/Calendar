@@ -1,6 +1,8 @@
 package com.nyong.calendar.api.config;
 
 import com.nyong.calendar.api.dto.AuthUser;
+import com.nyong.calendar.core.exception.CalendarException;
+import com.nyong.calendar.core.exception.ErrorCode;
 import org.springframework.core.MethodParameter;
 import org.springframework.web.bind.support.WebDataBinderFactory;
 import org.springframework.web.context.request.NativeWebRequest;
@@ -25,7 +27,7 @@ public class AuthUserResolver implements HandlerMethodArgumentResolver {
         if (userId != null) {
             return AuthUser.toAuthUser(userId);
         } else {
-            throw new RuntimeException("bad request. no session");
+            throw new CalendarException(ErrorCode.BAD_REQUEST);
         }
     }
 }

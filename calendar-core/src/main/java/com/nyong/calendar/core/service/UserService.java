@@ -3,6 +3,8 @@ package com.nyong.calendar.core.service;
 import com.nyong.calendar.core.domain.entity.User;
 import com.nyong.calendar.core.domain.entity.repository.UserRepository;
 import com.nyong.calendar.core.dto.UserCreateReq;
+import com.nyong.calendar.core.exception.CalendarException;
+import com.nyong.calendar.core.exception.ErrorCode;
 import com.nyong.calendar.core.util.Encryptor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -22,7 +24,7 @@ public class UserService {
     public User create(UserCreateReq req) {
         userRepository.findByEmail(req.getEmail())
                 .ifPresent(u -> {
-                    throw new RuntimeException("cannot find user");
+                    throw new CalendarException(ErrorCode.USER_NOT_FOUND);
                 });
         return userRepository.save(req.toEntity(encryptor));
     }
@@ -34,6 +36,6 @@ public class UserService {
 
     public User findById(Long id) {
         return userRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("id 값과 일치하는 회원이 존재하지 않습니다."));
+                .orElseThrow(() -> new CalendarException(ErrorCode.USER_NOT_FOUND));
     }
 }
