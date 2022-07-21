@@ -12,6 +12,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
+@Transactional(readOnly = true)
 public class UserService {
 
     private final UserRepository userRepository;
@@ -29,5 +30,10 @@ public class UserService {
     public Optional<User> findPwMatchUser(String email, String password) {
         return userRepository.findByEmail(email)
                 .map(user -> user.isMatch(encryptor, password) ? user : null);
+    }
+
+    public User findById(Long id) {
+        return userRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("id 값과 일치하는 회원이 존재하지 않습니다."));
     }
 }
