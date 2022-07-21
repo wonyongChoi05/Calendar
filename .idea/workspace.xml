@@ -5,29 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dc34b1e-8f93-4d34-8c52-67a9264a0b36" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/controller/api/ScheduleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/controller/api/ScheduleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/dto/EventCreateReq$EventCreateReqBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/dto/EventCreateReq$EventCreateReqBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/dto/EventCreateReq.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/dto/EventCreateReq.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/dto/SignUpReq$SignUpReqBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/dto/SignUpReq$SignUpReqBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/dto/SignUpReq.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/dto/SignUpReq.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/service/ScheduleQueryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/service/ScheduleQueryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/config/AuthUserResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/config/AuthUserResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/controller/api/ScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/controller/api/ScheduleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/dto/EventCreateReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/dto/EventCreateReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/dto/NotificationCreateReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/dto/NotificationCreateReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/dto/SignUpReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/dto/SignUpReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/service/EventService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/service/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/service/ScheduleQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/service/ScheduleQueryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/util/DtoConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/util/DtoConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-core/out/production/classes/com/nyong/calendar/core/domain/entity/Engagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-core/out/production/classes/com/nyong/calendar/core/domain/entity/Engagement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-core/src/main/java/com/nyong/calendar/core/domain/entity/Engagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-core/src/main/java/com/nyong/calendar/core/domain/entity/Engagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar-core/src/main/java/com/nyong/calendar/core/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-core/src/main/java/com/nyong/calendar/core/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +116,11 @@
   </component>
   <component name="RunManager">
     <configuration name="ApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <envs>
+        <env name="MAIL_USERNAME" value="rltgjqmduftlagl@gmail.com" />
+        <env name="MAIL_PASSWORD" value="xjbtqoduugtneifm" />
+      </envs>
       <module name="calendar.calendar-api.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.nyong.calendar.api.ApiApplication" />
       <extension name="coverage">
@@ -169,7 +153,7 @@
       <workItem from="1658248065743" duration="4152000" />
       <workItem from="1658310657902" duration="9875000" />
       <workItem from="1658360240614" duration="16439000" />
-      <workItem from="1658379799818" duration="14308000" />
+      <workItem from="1658379799818" duration="15309000" />
     </task>
     <servers />
   </component>
