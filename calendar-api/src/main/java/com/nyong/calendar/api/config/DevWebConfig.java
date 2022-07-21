@@ -7,13 +7,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.List;
 
-@Profile("!dev")
+@Profile("dev")
 @Configuration
-public class WebConfig implements WebMvcConfigurer {
+public class DevWebConfig implements WebMvcConfigurer {
 
     // AuthUserResolver Component 등록
     @Override
     public void addArgumentResolvers(List<HandlerMethodArgumentResolver> resolvers) {
-        resolvers.add(new AuthUserResolver());
+        resolvers.add(new FakeAuthUserResolver());
     }
 }

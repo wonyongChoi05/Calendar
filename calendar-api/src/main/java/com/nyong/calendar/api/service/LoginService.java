@@ -5,7 +5,6 @@ import com.nyong.calendar.api.dto.SignUpReq;
 import com.nyong.calendar.core.domain.entity.User;
 import com.nyong.calendar.core.dto.UserCreateReq;
 import com.nyong.calendar.core.service.UserService;
-import com.nyong.calendar.core.util.Encryptor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
