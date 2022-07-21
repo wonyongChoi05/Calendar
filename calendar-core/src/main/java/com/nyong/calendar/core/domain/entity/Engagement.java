@@ -2,6 +2,7 @@ package com.nyong.calendar.core.domain.entity;
 
 import com.nyong.calendar.core.domain.Event;
 import com.nyong.calendar.core.domain.RequestStatus;
+import com.nyong.calendar.core.util.Period;
 import lombok.*;
 
 import javax.persistence.*;
@@ -32,5 +33,9 @@ public class Engagement extends BaseEntity {
 
     public boolean isOverlapped(LocalDate date) {
         return this.schedule.isOverlapped(date);
+    }
+
+    public boolean isOverlapped(Period period) {
+        return this.schedule.isOverlapped(period);
     }
 }

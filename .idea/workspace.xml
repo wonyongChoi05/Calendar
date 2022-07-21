@@ -6,7 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="6dc34b1e-8f93-4d34-8c52-67a9264a0b36" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/controller/api/ScheduleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/controller/api/ScheduleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/service/ScheduleQueryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/out/production/classes/com/nyong/calendar/api/service/ScheduleQueryService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/controller/api/ScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/controller/api/ScheduleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/service/ScheduleQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-api/src/main/java/com/nyong/calendar/api/service/ScheduleQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar-core/out/production/classes/com/nyong/calendar/core/domain/entity/Engagement$EngagementBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-core/out/production/classes/com/nyong/calendar/core/domain/entity/Engagement$EngagementBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar-core/out/production/classes/com/nyong/calendar/core/domain/entity/Engagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-core/out/production/classes/com/nyong/calendar/core/domain/entity/Engagement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar-core/out/production/classes/com/nyong/calendar/core/domain/entity/Schedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-core/out/production/classes/com/nyong/calendar/core/domain/entity/Schedule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar-core/out/production/classes/com/nyong/calendar/core/util/Period.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-core/out/production/classes/com/nyong/calendar/core/util/Period.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar-core/src/main/java/com/nyong/calendar/core/domain/entity/Engagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-core/src/main/java/com/nyong/calendar/core/domain/entity/Engagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar-core/src/main/java/com/nyong/calendar/core/domain/entity/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-core/src/main/java/com/nyong/calendar/core/domain/entity/Schedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar-core/src/main/java/com/nyong/calendar/core/util/Period.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar-core/src/main/java/com/nyong/calendar/core/util/Period.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +158,7 @@
       <workItem from="1658248065743" duration="4152000" />
       <workItem from="1658310657902" duration="9875000" />
       <workItem from="1658360240614" duration="16439000" />
-      <workItem from="1658379799818" duration="7130000" />
+      <workItem from="1658379799818" duration="11103000" />
     </task>
     <servers />
   </component>

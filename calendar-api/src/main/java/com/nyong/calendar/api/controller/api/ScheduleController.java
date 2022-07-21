@@ -5,12 +5,14 @@ import com.nyong.calendar.api.service.EventService;
 import com.nyong.calendar.api.service.NotificationService;
 import com.nyong.calendar.api.service.ScheduleQueryService;
 import com.nyong.calendar.api.service.TaskService;
+import com.nyong.calendar.core.domain.entity.Schedule;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
+import java.time.YearMonth;
 import java.util.List;
 
 @RequestMapping("/api/schedules")
@@ -52,5 +54,21 @@ public class ScheduleController {
             @RequestParam(required = false)
             @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
         return scheduleQueryService.getSchedulesByDay(date == null ? LocalDate.now() : date, authUser);
+    }
+
+    @GetMapping("/week")
+    public List<ScheduleDto> getSchedulesByWeek(
+            AuthUser authUser,
+            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate startOfWeek
+    ) {
+        return scheduleQueryService.getSchedulesByWeek(startOfWeek == null ? LocalDate.now() : startOfWeek, authUser);
+    }
+
+    @GetMapping("/month")
+    public List<ScheduleDto> getSchedulesByMonth(
+            AuthUser authUser,
+            @RequestParam(required = false) @DateTimeFormat(pattern = "yyyy-MM") String yearMonth
+    ) {
+        return scheduleQueryService.getSchedulesByMonth(yearMonth == null ? YearMonth.now() : YearMonth.parse(yearMonth), authUser);
     }
 }
