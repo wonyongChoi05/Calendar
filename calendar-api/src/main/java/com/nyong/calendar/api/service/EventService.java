@@ -38,8 +38,7 @@ public class EventService {
                 .anyMatch(e -> eventCreateReq.getAttendeeIds().contains(e.getAttendee().getId())
                         && e.getRequestStatus() == RequestStatus.ACCEPTED
                         && e.getEvent().isOverlapped(eventCreateReq.getStartAt(), eventCreateReq.getEndAt()))) {
-
-            throw new RuntimeException("중복된 시간대에 일정을 등록할 수 없습니다.");
+            throw new RuntimeException("이미 초대한 상대이거나, 중복된 시간대에 일정을 등록할 수 없습니다.");
         }
 
         Schedule eventSchedule = Schedule.event(
@@ -51,13 +50,13 @@ public class EventService {
         );
 
         scheduleRepository.save(eventSchedule);
+
         eventCreateReq.getAttendeeIds()
                 .forEach(id -> {
-                    User attendee = userService.findById(id);
                     Engagement engagement = Engagement.builder()
                             .schedule(eventSchedule)
                             .requestStatus(RequestStatus.REQUESTED)
-                            .attendee(attendee)
+                            .attendee(userService.findById(id))
                             .build();
 
                     engagementRepository.save(engagement);

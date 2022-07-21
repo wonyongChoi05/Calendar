@@ -19,4 +19,5 @@ public class EventCreateReq {
     private LocalDateTime startAt;
     private LocalDateTime endAt;
     private List<Long> attendeeIds;
+
 }

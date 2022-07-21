@@ -38,7 +38,7 @@ public class ScheduleController {
     }
 
     @PostMapping("/notifications")
-    public ResponseEntity<Void> createTask(
+    public ResponseEntity<Void> createNotification(
             @RequestBody NotificationCreateReq notificationCreateReq, AuthUser authUser) {
         notificationService.create(notificationCreateReq, authUser);
         return ResponseEntity.ok().build();

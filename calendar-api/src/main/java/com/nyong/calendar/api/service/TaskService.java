@@ -16,7 +16,8 @@ public class TaskService {
     private final ScheduleRepository scheduleRepository;
 
     public void create(TaskCreateReq taskCreateReq, AuthUser authUser) {
-        Schedule task = Schedule.task(taskCreateReq.getTitle(),
+        Schedule task = Schedule.task(
+                taskCreateReq.getTitle(),
                 taskCreateReq.getDescription(),
                 taskCreateReq.getTaskAt(),
                 userService.findById(authUser.getId()));

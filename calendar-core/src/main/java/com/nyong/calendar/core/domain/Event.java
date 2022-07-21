@@ -16,4 +16,5 @@ public class Event {
     public boolean isOverlapped(LocalDateTime startAt, LocalDateTime endAt) {
         return schedule.getStartAt().isBefore(endAt) && startAt.isBefore(schedule.getEndAt());
     }
+
 }
